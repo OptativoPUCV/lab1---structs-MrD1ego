@@ -45,3 +45,18 @@ Thu 14 Mar 2024 09:13:09 PM UTC:
  tests:  0|7
 total_score: 0/70
 d97d288
+Thu 14 Mar 2024 09:14:47 PM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: ‘i’ undeclared (first use in this function)
+   14 |   for(i = 0 ; i < size ; i++)
+      |       ^
+exercises.c:14:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:16:10: error: ‘array’ undeclared (first use in this function); did you mean ‘arr’?
+   16 |       if(array[i] >= max)
+      |          ^~~~~
+      |          arr
+Compilation failed
+361d5ad
