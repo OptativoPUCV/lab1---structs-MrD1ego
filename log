@@ -89,3 +89,17 @@ Thu 14 Mar 2024 09:19:46 PM UTC:
  tests:  0|6
 total_score: 10/70
 e53112f
+Fri 15 Mar 2024 02:39:11 PM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:30:7: error: unused variable ‘Size1’ [-Werror=unused-variable]
+   30 |   int Size1 = size;
+      |       ^~~~~
+exercises.c:29:7: error: variable ‘temp’ set but not used [-Werror=unused-but-set-variable]
+   29 |   int temp = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9aa3bbb
