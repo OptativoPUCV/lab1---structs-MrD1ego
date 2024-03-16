@@ -197,3 +197,18 @@ Sat 16 Mar 2024 12:59:15 AM UTC:
  tests:  0|5
 total_score: 20/70
 7dbdf10
+Sat 16 Mar 2024 01:03:42 AM UTC: 
+ exercises.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:63:5: error: implicit declaration of function ‘print’; did you mean ‘printf’? [-Werror=implicit-function-declaration]
+   63 |     print(*newSize);
+      |     ^~~~~
+      |     printf
+exercises.c:81:1: error: control reaches end of non-void function [-Werror=return-type]
+   81 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+462daf6
