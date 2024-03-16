@@ -213,7 +213,8 @@ Nodo *crearListaEnlazada(int arr[], int size)
       {
           inicio = Vector;
           actual = inicio;
-      } else 
+      } 
+      else 
       {
           actual->siguiente = Vector;
           actual = actual->siguiente;
