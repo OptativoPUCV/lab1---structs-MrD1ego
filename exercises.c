@@ -139,11 +139,11 @@ int checkSorted(int arr[], int size) {
         countAscendente = 0;
       }
     }
-  if(countAscendente ==  size - 1)
+  if(countAscendente ==  size)
   {
     return 1;
   }
-  if(countDescendente == size - 1)
+  if(countDescendente == size)
   {
     return -1;
   }
