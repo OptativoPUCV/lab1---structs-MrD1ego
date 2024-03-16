@@ -237,3 +237,19 @@ exercises.c:93:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 c35a1d4
+Sat 16 Mar 2024 01:08:00 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:92:10: error: ‘newArr’ undeclared (first use in this function); did you mean ‘newArray’?
+   92 |   return newArr;
+      |          ^~~~~~
+      |          newArray
+exercises.c:92:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:93:1: error: control reaches end of non-void function [-Werror=return-type]
+   93 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+45ce31b
