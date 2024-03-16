@@ -124,19 +124,16 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) { 
-  /*int countAscendente = 0;
+  int countAscendente = 0;
   int countDescendente = 0;
   for(int i = 1 ; i < size ; i++)
     {
       if(arr[i - 1] < arr[i])
       {
-        countAscendente++;
-        countDescendente = 0;
-      }
+        countAscendente++;      }
       if(arr[i - 1] > arr[i])
       {
         countDescendente++;
-        countAscendente = 0;
       }
     }
   if(countAscendente ==  size)
@@ -147,8 +144,8 @@ int checkSorted(int arr[], int size) {
   {
     return -1;
   }
-  return 0;*/
-  int ascendente = 1;
+  return 0;
+  /*int ascendente = 1;
   int descendente = 1;
 
   for(int i = 1; i < size; i++) 
@@ -167,7 +164,7 @@ int checkSorted(int arr[], int size) {
       return 1;
   if (descendente == 1)
       return -1;
-  return 0;
+  return 0;*/
 }
 
 /*
