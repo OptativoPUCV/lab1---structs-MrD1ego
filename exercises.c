@@ -202,20 +202,20 @@ Nodo *crearListaEnlazada(int arr[], int size)
 
   for (int i = 0; i < size; i++) 
   {
-      Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
-      if (nuevoNodo == NULL) {
+      Nodo *Vector = (Nodo *)malloc(sizeof(Nodo));
+      if (Vector == NULL) {
           return NULL;
       }
-      nuevoNodo->numero = arr[i];
-      nuevoNodo->siguiente = NULL;
+      Vector->numero = arr[i];
+      Vector->siguiente = NULL;
 
       if (inicio == NULL) 
       {
-          inicio = nuevoNodo;
+          inicio = Vector;
           actual = inicio;
       } else 
       {
-          actual->siguiente = nuevoNodo;
+          actual->siguiente = Vector;
           actual = actual->siguiente;
       }
   }
