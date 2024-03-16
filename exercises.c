@@ -147,7 +147,7 @@ int checkSorted(int arr[], int size) {
   }
   else
   {
-    return 0,
+    return 0;
   }
   /*int ascendente = 1;
   int descendente = 1;
