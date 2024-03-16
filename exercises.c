@@ -131,10 +131,12 @@ int checkSorted(int arr[], int size) {
       if(arr[i - 1] < arr[i])
       {
         countAscendente++;
+        countDescendente = 0;
       }
       if(arr[i - 1] > arr[i])
       {
         countDescendente++;
+        countAscendente = 0;
       }
     }
   if(countAscendente ==  size - 1)
