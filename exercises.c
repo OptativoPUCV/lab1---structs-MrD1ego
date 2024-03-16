@@ -74,22 +74,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         index++;
       }
     }
-  /*int *newArr = NULL;
-  *newSize = 0;
-  for(int i = 0 ; i < size ; i++)
-    {
-      if(arr[i] % 2 == 0)
-      {
-        newArr = (int *) realloc(newArr, (*newSize + 1) * sizeof(int));
-        if(newArr == NULL)
-        {
-          return NULL;
-        }
-        newArr[*newSize] = arr[i];
-        (*newSize)++;
-      }
-    }*/
-  return newArr;
+  return newArray;
 }
 
 /*
