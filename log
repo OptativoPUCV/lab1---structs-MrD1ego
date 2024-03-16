@@ -398,3 +398,20 @@ Sat 16 Mar 2024 09:35:09 PM UTC:
  tests:  0|3
 total_score: 40/70
 81ba7ba
+Sat 16 Mar 2024 09:40:02 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:151:3: error: expected expression before ‘}’ token
+  151 |   }
+      |   ^
+exercises.c:150:13: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  150 |     return 0,
+      |             ^
+exercises.c:172:1: error: control reaches end of non-void function [-Werror=return-type]
+  172 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+39e4d29
