@@ -128,20 +128,20 @@ int checkSorted(int arr[], int size) {
   int countDescendente = 0;
   for(int i = 1 ; i < size ; i++)
     {
-      if(arr[i - 1] < arr[i])
+      if(arr[i - 1] <= arr[i])
       {
         countAscendente++;      
       }
-      if(arr[i - 1] > arr[i])
+      if(arr[i - 1] >= arr[i])
       {
         countDescendente++;
       }
     }
-  if(countAscendente == size - 2)
+  if(countAscendente == size - 1)
   {
     return 1;
   }
-  if(countDescendente == size - 2)
+  if(countDescendente == size - 1)
   {
     return -1;
   }
