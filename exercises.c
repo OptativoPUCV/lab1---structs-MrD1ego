@@ -60,8 +60,20 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
         (*newSize)++;
       }
     }
-    print(*newSize);
-  //int *newArray = (int*)malloc(*newSize * sizeof(int));
+  int *newArray = (int*)malloc(*newSize * sizeof(int));
+  if(newArray == NULL)
+  {
+    return NULL:
+  }
+  int index = 0;
+  for(int i = 0 ; i < size ; i++)
+    {
+      if(arr[i] % 2 == 0)
+      {
+        newArray[index] = arr[i];
+        index++;
+      }
+    }
   /*int *newArr = NULL;
   *newSize = 0;
   for(int i = 0 ; i < size ; i++)
