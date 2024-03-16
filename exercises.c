@@ -149,26 +149,6 @@ int checkSorted(int arr[], int size) {
   {
     return 0;
   }
-  /*int ascendente = 1;
-  int descendente = 1;
-
-  for(int i = 1; i < size; i++) 
-  {
-      if(arr[i - 1] > arr[i]) 
-      {
-          ascendente = 0;
-      }
-      if(arr[i - 1] < arr[i]) 
-      {
-          descendente = 0;
-      }
-  }
-
-  if (ascendente == 1)
-      return 1;
-  if (descendente == 1)
-      return -1;
-  return 0;*/
 }
 
 /*
